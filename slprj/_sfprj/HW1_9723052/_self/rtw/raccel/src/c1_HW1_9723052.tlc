@@ -1,0 +1,81 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "N1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:80-82"\
+    }\
+    ChartData {\
+      Name         "N1_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:80-82"\
+    }\
+    ChartData {\
+      Name         "Z1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:100-102"\
+    }\
+    ChartData {\
+      Name         "Z1_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:100-102"\
+    }\
+    ChartData {\
+      Name         "i1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:120-122"\
+    }\
+    ChartData {\
+      Name         "i1_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:120-122"\
+    }\
+    ChartData {\
+      Name         "i2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:140-142"\
+    }\
+    ChartData {\
+      Name         "i2_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:140-142"\
+    }\
+    ChartData {\
+      Name         "D"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "HW1_9723052:212:160-161"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
